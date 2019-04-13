@@ -17,6 +17,7 @@ input[type=number]:focus,
 }
 html{
 	scroll-behavior: smooth;
+	transition: 1.3s;
 }
 body{
 	background-color: #E9EBEE;
@@ -55,6 +56,9 @@ body{
 	.d-m-none{
 		display: none;
 	}
+	.d-m-block{
+		display: block !important;
+	}
 	.post span{
 		display: none;
 	} 	
@@ -65,7 +69,16 @@ body{
 		padding-left: 10px;
 		padding-right: 10px;
 	}
+	.login{
+		height: 160px !important;
+	}
 }
+@media only screen and (max-width: 420px) {
+	.login span{
+		display: none;
+	}
+}
+
 
 
 /**
@@ -275,4 +288,165 @@ body{
 }
 .p1{
 	padding-bottom: 5px;
+}
+
+/**
+*   Login
+*/ 
+
+.welcome i{
+	font-size: 70px;
+	color:#717a82;
+}
+.description{
+	margin-top: 24px;
+}
+.bold{
+	font-weight: 600;
+}
+.bg-green{
+	background-color: #61a04e;
+}
+.btn-submit{
+	color:#fff;
+	font-weight: 600;
+	padding-right: 50px;
+	padding-left: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.btn-submit:hover{
+	color:#fff;
+}
+.login h1{
+	color:#fff;
+	margin-top: 10px;
+	font-weight: 600;
+}
+.login form{
+	margin-top: 2px;
+}
+.login form input{
+	border-radius: 0px !important;
+}
+.login form small{
+	color:#fff;
+	font-weight:600;
+}
+.login input{
+	border: 1px solid #000 !important;
+}
+.login form input[type="submit"]{
+	margin-top:24px;
+	width:80px !important;
+	width: 60px;
+	background-color: #3b5998 !important;
+	color:#fff;
+	font-weight: 600;
+}
+.login{
+	padding-left: 46px;
+	padding-right: 46px;
+	height: 80px;
+}
+
+/**
+*   Profile
+*/
+.profile .profile-head img{
+	height: 160px;
+	width: 160px;
+	border-radius:80px;
+	border:6px solid #fff;
+}
+.fb-profile-block {
+  margin: auto;
+  position: relative;
+  width: 100%;
+}
+.cover-container{
+    background: #e5e5e5;
+    background-image: url('/img/cover.jpg');
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;    
+}
+.fb-profile-block-thumb{
+  display: block;
+  height: 315px;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+}
+.fb-profile-block-menu {
+  border: 1px solid #d3d6db;
+  border-radius: 0 0 3px 3px;
+}
+.profile-img a{
+    bottom: 15px;
+    box-shadow: none;
+	display: block;
+	left: 15px;
+	padding:1px;
+	position: absolute;
+	height: 160px;
+	width: 160px;
+	z-index:9;
+}
+.profile-img img {
+  background-color: #fff;
+  border-radius: 100px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.07);
+  height:158px;
+  padding: 5px;
+  width:158px;
+}
+.profile-name {
+  bottom: 60px;
+  left: 200px;
+  position: absolute;
+}
+.profile-name h2 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  max-width: 275px;
+  position: relative;
+}
+.fb-profile-block-menu{
+  height: 44px;
+  position: relative;
+  width:100%;
+  overflow:hidden;
+ }
+.block-menu {
+  clear: right;
+  padding-left: 205px;
+  background-color: #fff;
+}
+.block-menu ul{
+	margin:0;
+	padding:0;
+}
+.block-menu ul li{
+	display:inline-block;
+}
+.block-menu ul li a {
+  border-right: 1px solid #e9eaed;
+  float: left;
+  font-size: 14px;
+  font-weight: bold;
+  height: 42px;
+  line-height: 3.0;
+  padding: 0 17px;
+  position: relative;
+  vertical-align: middle;
+  white-space: nowrap;
+  color:#4b4f56;
+  text-transform:capitalize;
+}
+.block-menu ul li:first-child a{
+  border-left: 1px solid #e9eaed;
 }

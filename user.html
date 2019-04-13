@@ -5,17 +5,504 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<title>NewsFeed &mdash; emigaBook</title>
+	<title>Xəbər Lenti &mdash; emigaBook</title>
 
+	<!-- Icons -->
+	<link rel="stylesheet" type="text/css" href="/assets/icons/css/all.min.css">
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" type="text/css" href="/assets/bootstrap/style.min.css">
 	<!-- Style CSS -->
 	<link rel="stylesheet" type="text/css" href="/assets/style.css">
 </head>
 <body>
+	
+<main role="main">
+<!--====================================== 
+				NavBar 
+========================================-->
+<nav class="desktop-navbar fixed-top pt-0 pb-0 navbar navbar-expand-lg navbar-dark bg-main">
+ <div class="container">
+  	
+  	<a class="navbar-brand" href="#">
+  		<i class="fab fa-facebook"></i>
+  	</a>
+
+  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  	  <i class="fas fa-bars"></i>
+  	</button>
+  
+  	<!-- =========  Collapse =========== -->
+
+  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    
+    <!-- ========= Search Bar ========== -->
+    <form class="form-inline my-2 my-lg-0 w-100 pt-0 pb-0">
+    	<div class="input-group pt-0 pb-0">
+      		<input class="form-control pt-0 pb-0 search" type="search" placeholder="Axtar..." aria-label="Axtar">
+      		<div class="input-group-prepend">
+        		<span class="input-group-text" id="basic-addon1">
+        			<i class="fas fa-search"></i>
+       	 		</span>
+      		</div>    
+    	</div>
+    </form>  		
+    
+    <!-- ========== Right Statement =========== -->
+     <ul class="navbar-nav mr-auto">
+      	<li class="nav-item active">
+       	 <a class="nav-link nav-border-r" href="#"><img src="/img/profile.jpg" /> 
+       	 	<span style="padding-right:5px;">Emin</span>
+       	 </a>
+      	</li>
+      	<li class="nav-item nav-border-r">
+       	 <a class="nav-link" href="#">Əsas</a>
+      	</li>
+      	<li class="nav-item nav-border-r">
+       	 <a class="nav-link" href="#">Yarat</a>
+      	</li>
+      	<li class="nav-item">
+       	 <a class="nav-link" href="#"><i class="fas fa-user-friends"></i></a>
+      	</li> 
+      	<li class="nav-item">
+       	 <a class="nav-link" href="#"><i class="fab fa-facebook-messenger"></i></a>
+      	</li> 
+      	<li class="nav-item nav-border-r">
+       	 <a class="nav-link" href="#"><i class="fas fa-bell"></i></a>
+      	</li>       
+      	<li class="nav-item">
+        	<a class="nav-link" href="#"><i class="fas fa-question-circle"></i></a>
+      	</li> 
+      	<li class="nav-item">
+        	<a class="nav-link" href="#"><i class="fas fa-caret-down"></i></a>
+     	 </li> 
+      </ul>
+  	</div>
+  </div>
+</nav>
+
+
+<nav class="mobile-navbar fixed-top pt-0 pb-0 navbar navbar-expand-lg navbar-dark bg-main">
+ <div class="container">
+  	
+  	<a class="navbar-brand" href="#">
+  		<i class="fab fa-facebook"></i>
+  	</a>
+
+  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  	  <i class="fas fa-bars"></i>
+  	</button>
+
+  	<!-- =========  Collapse =========== -->
+
+
+  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    
+    <!-- ========= Search Bar ========== -->
+    <form class="form-inline my-2 my-lg-0 w-100 pt-0 pb-0">
+      		<input class="form-control pt-0 pb-0 search w-100" type="search" placeholder="Search" aria-label="Search">   
+    </form>  		
+    
+    <!-- ========== Right Statement =========== -->
+     <ul class="navbar- nav-scroller  nav mr-auto">
+      	<li class="nav-item active">
+       	 <a class="nav-link nav-border-r" href="#">
+       	 	<span style="padding-right:5px;"><img src="/img/profile.jpg" />  Emin</span>
+       	 </a>
+      	</li>
+      	<li class="nav-item nav-border-r">
+       	 <a class="nav-link" href="#">Əsas</a>
+      	</li>
+      	<li class="nav-item nav-border-r">
+       	 <a class="nav-link" href="#">Yarat</a>
+      	</li>
+      </ul>
+  	</div>
+
+  </div>
+</nav>
+
+	
+<div class="container" style="margin-top:-20px;">
+
+    <div class="row">
+
+
+        <!-- ============== Profile ================= -->
+
+        <div class="col-lg-12 p-0">
+            <div class="fb-profile-block">
+                <div class="fb-profile-block-thumb cover-container">
+                  <div style="height:100%;width:100%;
+                       background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);">       
+                  </div>
+                </div>
+                <div class="profile-img">
+                    <a href="#">
+                        <img src="/img/profile.jpg" alt="" title="">        
+                    </a>
+                </div>
+                <div class="profile-name">
+                    <h2>Emin Muhammadi</h2>
+                </div>
+                
+                <div class="fb-profile-block-menu">
+                    <div class="block-menu">
+                        <ul>
+                            <li><a href="#">Xəbər Lenti</a></li>
+                            <li><a href="#">Haqqımda</a></li>
+                            <li><a href="#">Dostlar</a></li>
+                            <li><a href="#">Şəkillər</a></li>
+                            <li><a href="#">Daha çoxu...</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-12 space"></div>
+        <div class="col-lg-1"></div>
+
+        <div class="col-lg-4 d-m-none">
+              <div class="sticky-top sticky-offset">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-md-12 story">
+
+            <p class="story-header">Haqqımda</p>
+            <hr>
+            <div class="container">
+              <div class="row">
+
+              <div class="col-md-4">
+                  <i class="far fa-address-card"></i>
+              </div>
+              
+                <div class="col-md-8 small">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </div>  
+              </div>  
+            </div>
+          </div>  
+          <div class="col-md-12 story mt-2">
+
+            <p class="story-header">Dostlar</p>
+            <hr>
+            <div class="container">
+              <div class="row">
+
+              <div class="col-md-4">
+                  <i class="fas fa-user-friends"></i>
+              </div>
+              
+                <div class="col-md-8 small">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </div>  
+              </div>  
+            </div>
+          </div>  
+          <div class="col-md-12 text-muted p-0 pt-3 small">&copy; 2019 emigaBook. All rights reserved.</div>
+        </div>  
+      </div>
+   </div>
+        </div>
+
+
+        <!-- =========== Post ============ -->
+        <div class="col-lg-6">
+
+            <div class="row">
+
+
+      <!-- ======== Enter a Post ========= -->
+
+      <div class="col-md-12 type-post p-0">
+
+        <div class="type-post-header">Post Yaz</div>
+
+          <form class="container" style="padding-bottom:5px;border-bottom: 1px solid #e5e5e5;">
+            <div class="row">
+
+              <div class="col-2">
+                <img src="/img/profile.jpg" />
+              </div>
+
+              <div class="col-10 p-0">  
+                <textarea class="form-control" 
+                      placeholder="Emin, indi nə fikirləşirsən?"></textarea>
+              </div>
+
+                <div class="col-md-12 space"></div>
+            </div>
+          </form>
+
+        <div class="container type-post-footer pt-1">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3 bg-gray">
+                <i class="fas fa-image"></i> Şəkil/Video
+              </div>
+              <div class="col-md-3 bg-gray">
+                <i class="fas fa-user-tag"></i> Dostunu tagla
+              </div>
+              <div class="col-md-3 bg-gray">
+                <i class="fas fa-smile-beam"></i> Hiss/Tədbir
+              </div>
+              <div class="col-md-3 bg-gray" style="text-align: center;">
+                <i class="fas fa-ellipsis-h"></i>
+              </div>
+            </div>  
+          </div>  
+        </div>
+        
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 pt-3"></div>
+            <div class="col-4 col-md-4">
+              <button class="btn bg-gray">
+                <i class="fas fa-caret-down"></i> <span>Daha çox</span>
+              </button>
+            </div>
+          
+            <div class="col-8 col-md-8">
+              <input type="submit" class="btn bg-main w-100" value="Paylaş">      
+            </div>  
+          </div>
+        </div>  
+
+      </div>
+
+<!-- ======== Posts ========= -->
+      <div class="col-md-12 post p-0">
+
+        <!-- ======= Header ======= -->
+        <div class="d-flex bd-highlight mb-3 post-header pb-0">
+          <div class="p-2 bd-highlight">
+            <img src="/img/fb.png" /> 
+          </div>
+          <div class="p-2 bd-highlight">
+            <a href="#">Facebook</a> <br> 
+            <small>Aprel 8 · <i class="fas fa-globe-americas"></i></small>
+          </div>
+          <div class="ml-auto p-2 bd-highlight">
+            <i class="fas fa-ellipsis-h"></i>
+          </div>
+        </div>
+        <!-- ===== Container ======= -->
+          <p class="pr-2 pl-2 pt-2 pb-0" style="border-top:1px solid #e5e5e5;">Yerli təlimatlar axtarırsınızsa, evdə qalan xəzinələri tapmaqda kömək etməlisiniz.</p>
+          <img src="/img/post1.jpg" class="photo">
+          <div class="d-flex justify-content-between">
+            <div class="p1">
+              <small class="pr-2 pl-2 pt-1">
+                <i class="fas fa-thumbs-up"></i><span> Emin Muhammadi , John Doe və</span> 129 
+                <span>daha başqaları</span>
+              </small>  
+            </div>
+            <div class="p1">
+              <small class="pr-2 pl-2 pt-1">
+                <i class="far fa-comment"></i> 912 <span>Şərhlər</span>
+              </small>  
+            </div>
+          </div>
+          <div class="d-flex justify-content-around pt-2 pb-2" style="border-top: 1px solid #e5e5e5;">
+            <button class="p1 btn"><i class="far fa-thumbs-up"></i> Bəyən</button>
+            <button class="p1 btn"><i class="far fa-comment"></i> Şərh</button>
+            <button class="p1 btn"><i class="fas fa-share"></i> Paylaş</button>
+          </div>          
+      </div>  
+
+
+      <!-- ======== Posts ========= -->
+      <div class="col-md-12 post p-0">
+
+        <!-- ======= Header ======= -->
+        <div class="d-flex bd-highlight mb-3 post-header pb-0">
+          <div class="p-2 bd-highlight">
+            <img src="/img/profilead.jpg" /> 
+          </div>
+          <div class="p-2 bd-highlight">
+            <a href="#">5 Seconds Of Summer</a>  <br> 
+            <small>Reklam</small>
+          </div>
+          <div class="ml-auto p-2 bd-highlight">
+            <i class="fas fa-ellipsis-h"></i>
+          </div>
+        </div>
+        <!-- ===== Container ======= -->
+          <p class="pr-2 pl-2 pt-2 pb-0" style="border-top:1px solid #e5e5e5;">5 Seconds Of Summer - Youngblood (Alt Version)</p>       
+            <video class="video" controls poster="/video/poster1.jpg">
+              <source src="/video/post1.webm" type="video/webm">
+                Your browser does not support the video tag.
+          </video> 
+          <div class="d-flex justify-content-between">
+            <div class="p1">
+              <small class="pr-2 pl-2 pt-1">
+                <i class="fas fa-thumbs-up"></i><span> Emin Muhammadi , John Doe və</span> 139 
+                <span>daha başqaları</span>
+              </small>  
+            </div>
+            <div class="p1">
+              <small class="pr-2 pl-2 pt-1">
+                <i class="far fa-comment"></i> 29 <span>Şərhlər</span>
+              </small>  
+            </div>
+          </div>
+          <div class="d-flex justify-content-around pt-2 pb-2" style="border-top: 1px solid #e5e5e5;">
+            <button class="p1 btn"><i class="far fa-thumbs-up"></i> Bəyən</button>
+            <button class="p1 btn"><i class="far fa-comment"></i> Şərh</button>
+            <button class="p1 btn"><i class="fas fa-share"></i> Paylaş</button>
+          </div>        
+      </div>  
+
+
+      <!-- ======== Posts ========= -->
+      <div class="col-md-12 post p-0">
+
+        <!-- ======= Header ======= -->
+        <div class="d-flex bd-highlight mb-3 post-header pb-0">
+          <div class="p-2 bd-highlight">
+            <img src="/img/profile.jpg" /> 
+          </div>
+          <div class="p-2 bd-highlight">
+            <a href="#">Emin Muhammadi</a>  <br> 
+            <small>Aprel 16 · <i class="fas fa-globe-americas"></i></small>
+          </div>
+          <div class="ml-auto p-2 bd-highlight">
+            <i class="fas fa-ellipsis-h"></i>
+          </div>
+        </div>
+        <!-- ===== Container ======= -->
+          <p class="pr-2 pl-2 pt-2 pb-0" style="border-top:1px solid #e5e5e5;">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.            
+          </p>
+          <div class="d-flex justify-content-between">
+            <div class="p1">
+              <small class="pr-2 pl-2 pt-1">
+                <i class="fas fa-thumbs-up"></i><span> Emin Muhammadi , John Doe və</span> 109 
+                <span>daha başqaları</span>
+              </small>  
+            </div>
+            <div class="p1">
+              <small class="pr-2 pl-2 pt-1">
+                <i class="far fa-comment"></i> 29 <span>Şərhlər</span>
+              </small>  
+            </div>
+          </div>
+          <div class="d-flex justify-content-around pt-2 pb-2" style="border-top: 1px solid #e5e5e5;">
+            <button class="p1 btn"><i class="far fa-thumbs-up"></i> Bəyən</button>
+            <button class="p1 btn"><i class="far fa-comment"></i> Şərh</button>
+            <button class="p1 btn"><i class="fas fa-share"></i> Paylaş</button>
+          </div>        
+      </div>  
+
+      <!-- ======== Posts ========= -->
+      <div class="col-md-12 post p-0">
+
+        <!-- ======= Header ======= -->
+        <div class="d-flex bd-highlight mb-3 post-header pb-0">
+          <div class="p-2 bd-highlight">
+            <img src="/img/fb.png" /> 
+          </div>
+          <div class="p-2 bd-highlight">
+            <a href="#">Facebook</a> <br> 
+            <small>Aprel 4 · <i class="fas fa-globe-americas"></i></small>
+          </div>
+          <div class="ml-auto p-2 bd-highlight">
+            <i class="fas fa-ellipsis-h"></i>
+          </div>
+        </div>
+        <!-- ===== Container ======= -->
+          <img src="/img/image.png" class="photo">
+          <div class="d-flex justify-content-between">
+            <div class="p1">
+              <small class="pr-2 pl-2 pt-1">
+                <i class="fas fa-thumbs-up"></i><span> Emin Muhammadi , John Doe və</span> 1912 
+                <span>daha başqaları</span>
+              </small>  
+            </div>
+            <div class="p1">
+              <small class="pr-2 pl-2 pt-1">
+                <i class="far fa-comment"></i> 39 <span>Şərhlər</span>
+              </small>  
+            </div>
+          </div>
+          <div class="d-flex justify-content-around pt-2 pb-2" style="border-top: 1px solid #e5e5e5;">
+            <button class="p1 btn"><i class="far fa-thumbs-up"></i> Bəyən</button>
+            <button class="p1 btn"><i class="far fa-comment"></i> Şərh</button>
+            <button class="p1 btn"><i class="fas fa-share"></i> Paylaş</button>
+          </div>  
+      </div>  
+
+      <!-- ======== Posts ========= -->
+      <div class="col-md-12 post p-0">
+
+        <!-- ======= Header ======= -->
+        <div class="d-flex bd-highlight mb-3 post-header pb-0">
+          <div class="p-2 bd-highlight">
+            <img src="/img/profile2.jpg" /> 
+          </div>
+          <div class="p-2 bd-highlight">
+              <a href="#">Illustration of World</a>  
+            <br> 
+            <small>Reklam</small>
+          </div>
+          <div class="ml-auto p-2 bd-highlight">
+            <i class="fas fa-ellipsis-h"></i>
+          </div>
+        </div>
+        <!-- ===== Container ======= -->
+          <img src="/video/post1.gif" class="photo">
+          <div class="d-flex justify-content-between">
+            <div class="p1">
+              <small class="pr-2 pl-2 pt-1">
+                <i class="fas fa-thumbs-up"></i><span> Emin Muhammadi , John Doe və</span> 19k 
+                <span>daha başqaları</span>
+              </small>  
+            </div>
+            <div class="p1">
+              <small class="pr-2 pl-2 pt-1">
+                <i class="far fa-comment"></i> 9.3k <span>Şərhlər</span>
+              </small>  
+            </div>
+          </div>
+          <div class="d-flex justify-content-around pt-2 pb-2" style="border-top: 1px solid #e5e5e5;">
+            <button class="p1 btn"><i class="far fa-thumbs-up"></i> Bəyən</button>
+            <button class="p1 btn"><i class="far fa-comment"></i> Şərh</button>
+            <button class="p1 btn"><i class="fas fa-share"></i> Paylaş</button>
+          </div>      
+      </div>  
+
+      <!-- Loading -->
+      <div class="col-md-12 bg-gray mt-2" style="height:60px;"> 
+        <div class="d-flex justify-content-center mt-3">
+          <div class="spinner-border" role="status">
+            <span class="sr-only">Yüklənir...</span>
+          </div>
+        </div>
+      </div>
 
 
 
+            </div>          
+
+        <div class="col-lg-1"></div>
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+</main>
 
 	<!-- Jquery -->
 	<script type="text/javascript" src="/assets/bootstrap/jquery.min.js"></script>
