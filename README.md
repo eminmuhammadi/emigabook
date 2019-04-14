@@ -1,5 +1,5 @@
 # emigabook
-Created sketch for Facebook for a one Day (for Lab at University) -- [Azerbaijani Language]
+Created similiar sketch from Facebook for a one Day (for Lab at University) -- [Azerbaijani Language]
 
 ## Online Demo
 
