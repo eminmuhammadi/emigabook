@@ -366,7 +366,7 @@ body{
 }
 .cover-container{
     background: #e5e5e5;
-    background-image: url('/img/cover.jpg');
+    background-image: url('img/cover.jpg');
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
